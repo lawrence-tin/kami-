@@ -6,6 +6,9 @@ The KAMI Airlines RESTful API offers the following endpoints:
    - Method: POST
    - Description: Allows input for 10 airplanes with user-defined ID and passenger assumptions.
 
+   Example using cURL:
+    curl -X POST http://127.0.0.1:8000/api/airplanes/ -H "Content-Type: application/json" -d "{\"id\":1,\"passenger_assumptions\":100}"
+
 2. Calculations
 
    - Route: `/api/airplanes/<id>/`
