@@ -2,7 +2,6 @@ from django.test import TestCase
 from rest_framework.test import APIClient
 from rest_framework import status
 from .models import Airplane
-from .helpers import calculate_expected_fuel_consumption  # Import helper function
 import math
 
 class AirplaneAPITests(TestCase):
@@ -49,3 +48,10 @@ class AirplaneAPITests(TestCase):
         """
         response = self.client.get('/api/airplanes/1/')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_delete_airplane(self):
+        """
+        Test deleting an airplane by ID.
+        """
+        response = self.client.delete('/api/airplanes/1/')
+        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)

@@ -43,9 +43,9 @@ class AirplaneListCreateView(generics.ListCreateAPIView):
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-class AirplaneDetailView(generics.RetrieveAPIView):
+class AirplaneDetailView(generics.RetrieveUpdateDestroyAPIView):
     """
-    View for retrieving airplane details.
+    View for retrieving, updating, and deleting airplane details.
     """
     queryset = Airplane.objects.all()
     serializer_class = AirplaneSerializer
