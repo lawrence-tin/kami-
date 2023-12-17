@@ -47,3 +47,5 @@ Usage
 Notes
 - Ensure all necessary data for the airplanes (ID, passenger assumptions) are provided during input.
 - Responses from the API will include calculated fuel consumption per minute and maximum flight duration.
+
+This is a summary of the project. For detailed documentation, refer to "source" directory
