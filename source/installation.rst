@@ -7,7 +7,7 @@ To set up and run the KAMI Airlines project locally, follow these installation s
 1. **Clone the Repository:**
 
    Clone the project repository from GitHub:
-   git clone https://github.com/lawrence-tin/kami-airlines/
+   git clone git@github.com:lawrence-tin/kami-airlines.git
 
 
 2. Navigate to Project Directory:
